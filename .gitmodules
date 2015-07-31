@@ -1,0 +1,3 @@
+[submodule ".themes/libingcun-octopress-theme"]
+	path = .themes/libingcun-octopress-theme
+	url = https://github.com/libingcun/libingcun-octopress-theme
