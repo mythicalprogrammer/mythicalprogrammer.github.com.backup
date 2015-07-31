@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tiny God Blog]]></title>
+  <title><![CDATA[Lackadaisical Pirozhki]]></title>
   <link href="http://mythicalprogrammer.github.io/atom.xml" rel="self"/>
   <link href="http://mythicalprogrammer.github.io/"/>
-  <updated>2015-07-31T00:59:18-07:00</updated>
+  <updated>2015-07-31T01:03:47-07:00</updated>
   <id>http://mythicalprogrammer.github.io/</id>
   <author>
     <name><![CDATA[Anthony Doan]]></name>
