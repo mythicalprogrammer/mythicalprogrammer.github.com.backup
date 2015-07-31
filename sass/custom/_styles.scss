@@ -9,10 +9,12 @@ html {
   body { -webkit-text-size-adjust: auto; }
   body > header { font-size: $header-font-size * 1.2; }
   #main {
+    @include pie-clearfix;
     padding: 0;
     margin: 0 auto;
   }
   #content {
+    @include pie-clearfix;
     overflow: visible;
     margin-right: 0;
     position: relative;
@@ -25,6 +27,7 @@ html {
     }
   }
   aside.sidebar {
+    @include pie-clearfix;
     width: auto;
     padding: 0 $sidebar-pad-medium $sidebar-pad-medium;
     background: none;
@@ -45,6 +48,7 @@ html {
 @media only screen and (min-width: 992px) {
   body > header { font-size: $header-font-size * 1.3; }
   #content {
+    @include pie-clearfix;
     overflow: visible;
     position: relative;
     margin-right: 0;
@@ -62,6 +66,7 @@ html {
     padding: 1em 0 1em 0;
     .collapse-sidebar & {
       padding: { left: $pad-wide; right: $pad-wide; }
+      @include pie-clearfix;
     }
   }
 }

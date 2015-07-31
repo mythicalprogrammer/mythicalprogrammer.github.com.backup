@@ -18,6 +18,10 @@ $header-font-size: 1em !default;
 $header-padding-top: 1.5em !default;
 $header-padding-bottom: 1.5em !default;
 
+.group { 
+    @include pie-clearfix; 
+}
+
 @mixin collapse-sidebar {
   float: none;
   width: auto;
@@ -46,6 +50,8 @@ body {
   max-width: $max-width;
   position: relative;
   margin: 0 auto;
+  background: url('../images/bg.png');
+  background-size: 100% auto;
   > header, > nav, > footer, #content > article, #content > div > article, #content > div > section {
     @include pie-clearfix; 
     padding-left: $pad-min;

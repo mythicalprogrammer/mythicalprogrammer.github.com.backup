@@ -37,8 +37,8 @@ html {
 body {
 	-moz-background-size:100% auto;
 	background-attachment:fixed;
-	background: #666 url(../image/bg.png);
-	background-position:center center;
+	background: url(../images/bg.jpg);
+    background-size: 100% auto;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 h2, h3, h4, h5, h6 {
