@@ -3,8 +3,9 @@ body > nav {
   background-color: $nav-bg;
   /*@include background($nav-bg-front, $nav-bg-back);*/
   border: {
-    top: 1px solid $nav-border-top;
-    bottom: 1px solid $nav-border-bottom; }
+    //top: 1px solid $nav-border-top;
+    //bottom: 1px solid $nav-border-bottom; 
+    }
   padding-top: .35em;
   padding-bottom: .35em;
   form {
@@ -20,7 +21,7 @@ body > nav {
       @include background-clip(padding-box);
       @include box-shadow(lighten($nav-bg, 2) 0 1px);
       background-color: lighten($nav-bg, 15);
-      border: 1px solid $nav-border;
+      //border: 1px solid $nav-border;
       color: #888;
       &:focus {
         color: #444;
@@ -63,18 +64,18 @@ body > nav {
       line-height: 1.5em;
     }
     li + li {
-      border-left: 1px solid $nav-border-left;
+      //border-left: 1px solid $nav-border-left;
       margin-left: .8em;
       a {
         padding-left: .8em;
-        border-left: 1px solid $nav-border-right;
+        //border-left: 1px solid $nav-border-right;
       }
     }
     form {
       float: right;
       text-align: left;
       padding-left: .8em;
-      width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium + 20px;
+      //width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium + 20px;
       .search {
         width: 93%;
         font-size: .95em;
@@ -82,7 +83,7 @@ body > nav {
       }
     }
     ul[data-subscription$=email] + form {
-      width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium - 58px;
+      //width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium - 58px;
       .search { width: 91%; }
     }
     fieldset.mobile-nav { display: none; }
@@ -90,10 +91,10 @@ body > nav {
   }
   @media only screen and (min-width: 992px) {
     form {
-      width: $sidebar-width-wide - $pad-wide - $sidebar-pad-wide*2 + 10px;
+      //width: $sidebar-width-wide - $pad-wide - $sidebar-pad-wide*2 + 10px;
     }
     ul[data-subscription$=email] + form {
-      width: $sidebar-width-wide - $pad-wide - $sidebar-pad-wide*2 - 58px;
+      //width: $sidebar-width-wide - $pad-wide - $sidebar-pad-wide*2 - 58px;
     }
   }
 }
@@ -106,10 +107,10 @@ body > nav {
 @mixin mask-subscription-nav($feed: 'rss.png'){
   position: relative; top: 0px;
   text-indent: -999999em;
-  background-color: $nav-border-right;
+  //background-color: $nav-border-right;
   border: 0;
   padding: 0;
-  &,&:after { @include mask-image($feed); }
+  //&,&:after { @include mask-image($feed); }
   &:after {
     content: "";
     position: absolute; top: -1px; left: 0;
@@ -121,12 +122,12 @@ body > nav {
   body > nav {
     @media only screen and (min-width: 550px) {
       ul[data-subscription$=email] + form {
-        width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium - 32px;
+        //width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium - 32px;
       }
     }
     @media only screen and (min-width: 992px) {
       ul[data-subscription$=email] + form {
-        width: $sidebar-width-wide - $pad-wide - $sidebar-pad-wide*2 - 32px;
+        //width: $sidebar-width-wide - $pad-wide - $sidebar-pad-wide*2 - 32px;
       }
     }
   }

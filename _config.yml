@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://mythicalprogrammer.github.io
-title: Tiny God Blog
+title: Lackadaisical Pirozhki 
 subtitle: Musing of a relentless person with a god complex. 
 author: Anthony Doan
 simple_search: https://www.google.com/search
@@ -33,7 +33,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+markdown: kramdown 
 rdiscount:
   extensions:
     - autolink
